@@ -7,7 +7,6 @@ class ActivityGen extends Component {
             let insertInto = document.getElementById('resultField')
             let url = 'https://www.boredapi.com/api/activity'
 
-
             fetch(url)
                 .then(data => data.json())
                 .then(res => {

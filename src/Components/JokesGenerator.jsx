@@ -7,7 +7,7 @@ class QuoteGen extends Component {
         
         const apiHandler = () => {
             //GET YOUR KEY HERE: https://humorapi.com/console/#Dashboard
-            let key = 'YOUR_KEY'
+            let key = process.env.REACT_APP_HUMOR_KEY
             let url = `https://api.humorapi.com/jokes/random?api-key=${key}`
             let insertInto = document.getElementById('resultField')
 
