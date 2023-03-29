@@ -1,7 +1,6 @@
 import { Component } from "react";
 import '../Css/Body.css'
 
-
 class QuoteGen extends Component {
     render(){
         
@@ -24,7 +23,7 @@ class QuoteGen extends Component {
         return(
             <main>
                 <h1>Jokes Generator</h1>
-                <button onClick={() => apiHandler()} className="btn btn-dark w-50 mt-3 mb-3" type="button">Generate</button>
+                <button onClick={() => apiHandler()} className="btn btn-outline-light w-50 mt-3 mb-3" type="button">Generate</button>
                 <div id="resultField"></div>
             </main>
         )

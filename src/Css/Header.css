@@ -3,43 +3,58 @@ header {
     width: 80%;
     max-width: 1440px;
 
+    background-color: #00000066;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border: 1px solid var(--border-color);
+    border-top: none;
     border-radius: 0 0 10px 10px;
 }
+@keyframes roda-roda {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 
+    0%   { filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(221deg) brightness(98%) contrast(104%);}
+    50%  { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(62deg) brightness(104%) contrast(105%);}
+    100%   { filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(221deg) brightness(98%) contrast(104%);}
+}
+
+@keyframes coloring {
+    0%   { filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(221deg) brightness(98%) contrast(104%);}
+    50%  { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(62deg) brightness(104%) contrast(105%);}
+    100%   { filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(221deg) brightness(98%) contrast(104%);}
+}
 header .reactLogo {
     width: 110px;
-}
-header img:hover {
-    filter: invert(86%) sepia(81%) saturate(4160%) hue-rotate(165deg) brightness(93%) contrast(106%);
-    transition: 0.5s;
+    animation: roda-roda 2s linear infinite;
 }
 
 header .socialWrap img {
     width: 37px;
     margin-right: 22px;
-}
-
-header .socialWrap img:hover {
-    filter: invert(86%) sepia(81%) saturate(4160%) hue-rotate(165deg) brightness(93%) contrast(106%);
-    transition: 0.5s;
+    animation: coloring 2s linear infinite;
 }
 
 @media screen and (max-width: 768px){
     header {
         width: 100%;
     }
-    header .reactLogo {
-        display: none;
-    }
+
     header .dropdown-center {
         margin-left: 25px;
     }
+}
 
+
+@media screen and (max-width: 425px){
+    header .socialWrap img {
+        width: 32px;
+        margin-right: 20px;
+    }
+    header .reactLogo {
+        display: none;
+    }
 }

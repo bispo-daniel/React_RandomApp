@@ -27,7 +27,7 @@ class QuoteGen extends Component {
         return(
             <main>
                 <h1>Quotes Generator</h1>
-                <button onClick={() => quoteGenerator()}className="btn btn-dark w-50 mt-3 mb-3" type="button">Generate</button>
+                <button onClick={() => quoteGenerator()}className="btn btn-outline-light w-50 mt-3 mb-3" type="button">Generate</button>
                 <div id="resultField"></div>
             </main>
         )

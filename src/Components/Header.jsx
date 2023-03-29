@@ -11,7 +11,7 @@ class Header extends Component {
                 <img src={reactLogo} alt="" className="reactLogo"/>
 
                 <div className="dropdown-center">
-                    <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button className="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Choose Action
                     </button>
                     <ul className="dropdown-menu">

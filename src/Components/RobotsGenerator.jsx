@@ -4,7 +4,7 @@ import '../Css/Body.css'
 class RobotGen extends Component {
     render(){
         const robotGenerator = () => {
-            let insertInto = document.getElementById('resultField')
+            let insertInto = document.getElementById('resultFieldRobots')
 
             let inputValue = document.getElementsByClassName('form-control')[0].value
             let url = `https://robohash.org/${inputValue}`
@@ -31,7 +31,7 @@ class RobotGen extends Component {
                     <input type="text" className="form-control" placeholder="Type your Robot's name..." aria-label="Recipient's username" aria-describedby="button-addon2" />
                 </div>
             
-                <div id="resultField"></div>
+                <div id="resultFieldRobots"></div>
             </main>
         )
     }

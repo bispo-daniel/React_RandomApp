@@ -1,16 +1,19 @@
 main {
     width: 50%;
     max-width: 1024px;
-    min-height: 80vh;
+    bottom: 0;
+
+    min-height: 90vh;
 
     padding: 20px;
+    background-color: #00000066;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 
     text-align: center;
 }
@@ -18,6 +21,9 @@ main h1 {
     font-size: 25px;
     font-weight: 100;
     color: white;
+}
+main button {
+    max-width: 300px;
 }
 main div p {
     color: white;
@@ -30,6 +36,17 @@ main div p:hover {
 main h1:hover {
     color: transparent;
     transition: 0.5s;
+}
+
+main #resultFieldRobots {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main div img {
+    text-align: center;
+    max-width: 220px;
 }
 
 /* Screen adaptation */

@@ -10,7 +10,6 @@ class ActivityGen extends Component {
             fetch(url)
                 .then(data => data.json())
                 .then(res => {
-                    console.log(res);
                     let path = res['activity']
                     let p1 = document.createElement('p')
                     p1.innerHTML = `${path}`
