@@ -10,7 +10,7 @@ class RobotGen extends Component {
             let inputValue = document.getElementsByClassName('form-control')[0].value
             let url = `https://robohash.org/${inputValue}`
 
-            Trigger("Robot generator")
+            Trigger(inputValue)
 
             let img = document.createElement('img')
             img.style.marginBottom = '5px'
