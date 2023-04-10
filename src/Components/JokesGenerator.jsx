@@ -1,14 +1,16 @@
 import { Component } from "react";
 import '../Css/Body.css'
+import Trigger from '../Trigger'
 
 class QuoteGen extends Component {
     render(){
-        
         const apiHandler = () => {
             //GET YOUR KEY HERE: https://humorapi.com/console/#Dashboard
             let key = process.env.REACT_APP_HUMOR_KEY
             let url = `https://api.humorapi.com/jokes/random?api-key=${key}`
             let insertInto = document.getElementById('resultField')
+
+            Trigger("Jokes generator")
 
             fetch(url)
                 .then(res => res.json())

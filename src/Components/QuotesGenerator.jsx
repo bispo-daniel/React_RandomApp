@@ -1,5 +1,6 @@
 import { Component } from "react";
 import '../Css/Body.css'
+import Trigger from '../Trigger'
 
 class QuoteGen extends Component {
     render(){
@@ -10,6 +11,8 @@ class QuoteGen extends Component {
             let values = ['author', 'content']
 
             let p1 = document.createElement('p')
+
+            Trigger("Quotes generator")
 
             fetch(url)
                 .then(data => data.json())

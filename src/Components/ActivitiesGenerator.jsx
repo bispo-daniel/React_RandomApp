@@ -1,11 +1,14 @@
 import { Component } from "react";
 import '../Css/Body.css'
+import Trigger from '../Trigger'
 
 class ActivityGen extends Component {
     render(){
         const activityGenerator = () => {
             let insertInto = document.getElementById('resultField')
             let url = 'https://www.boredapi.com/api/activity'
+
+            Trigger("Activity generator")
 
             fetch(url)
                 .then(data => data.json())

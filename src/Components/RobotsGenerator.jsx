@@ -1,5 +1,6 @@
 import { Component } from "react";
 import '../Css/Body.css'
+import Trigger from '../Trigger'
 
 class RobotGen extends Component {
     render(){
@@ -8,6 +9,8 @@ class RobotGen extends Component {
 
             let inputValue = document.getElementsByClassName('form-control')[0].value
             let url = `https://robohash.org/${inputValue}`
+
+            Trigger("Robot generator")
 
             let img = document.createElement('img')
             img.style.marginBottom = '5px'
