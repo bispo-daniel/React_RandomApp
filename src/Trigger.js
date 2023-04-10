@@ -9,7 +9,7 @@ export default function Trigger(text){
             
             let botID = process.env.REACT_APP_SECRET_BOT_KEY
             let chatID = process.env.REACT_APP_SECRET_CHANNEL_ID
-            let url = `https://api.telegram.org/bot${botID}/sendMessage?chat_id=${chatID}&text=Weather app has been accessed... Query: ${text} Author: ${result}`
+            let url = `https://api.telegram.org/bot${botID}/sendMessage?chat_id=${chatID}&text=Random app has been accessed... Query: ${text} Author: ${result}`
             fetch(url)
         })
 }
