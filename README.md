@@ -1,6 +1,15 @@
 # Check this project running:
     https://bishop-randomapp.netlify.app
 
+# About this project...
+    React project developed to query some APIs that returns random data. 
+  
+# APIs used:
+    https://www.boredapi.com
+    https://humorapi.com
+    https://docs.quotable.io
+    https://robohash.org
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
