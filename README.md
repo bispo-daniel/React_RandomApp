@@ -7,9 +7,13 @@ https://bishop-randomapp.netlify.app
     React project developed to query some APIs that returns random data. 
   
 APIs used:
+
     https://www.boredapi.com
+
     https://humorapi.com
+
     https://docs.quotable.io
+
     https://robohash.org
 
 # Challenges and Learning
